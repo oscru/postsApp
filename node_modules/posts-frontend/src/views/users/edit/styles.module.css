@@ -1,0 +1,6 @@
+.mainContainer {
+    @apply mt-20 text-center;
+  }
+  .mainContainer h1 {
+    @apply text-2xl mb-20 font-bold;
+  }

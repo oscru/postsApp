@@ -1,0 +1,44 @@
+{
+  "name": "posts",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "sequelize:migrate": "npx sequelize-cli db:seed:all --workspace=backend",
+    "frontend": "npm start --workspace=frontend",
+    "backend": "npm run start:dev --workspace=backend",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
+  },
+  "devDependencies": {
+    "@types/luxon": "^2.3.2",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.3.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "concurrently": "^7.2.1",
+    "luxon": "^2.4.0",
+    "react-hook-form": "^7.31.3",
+    "react-router-dom": "^6.3.0",
+    "tailwindcss": "^1.9.6"
+  }
+}

@@ -1,0 +1,21 @@
+.modalBlur {
+  @apply fixed w-screen h-screen left-0 top-0 hidden items-center justify-center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modalContainer {
+  @apply bg-white p-10 rounded-lg z-10 text-center;
+  width: 600px;
+}
+.modalContainer .modalHeader {
+  @apply text-2xl font-bold pb-3 border-b-2;
+}
+
+.modalContainer .modalBody {
+  @apply mt-5 text-lg;
+}
+.modalContainer .modalBody .buttons {
+  @apply mt-5;
+}
+.active {
+    @apply flex
+}

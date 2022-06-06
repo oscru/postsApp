@@ -1,0 +1,49 @@
+.mainContainer {
+  @apply w-2/3 m-auto pt-20;
+}
+.mainContainer h1 {
+  @apply text-3xl font-bold mb-10;
+}
+
+.mainContainer p {
+  @apply text-xl mb-20;
+}
+.comment,
+.reply {
+  @apply text-xs;
+}
+.commentsContainer {
+  @apply bg-gray-200 rounded-md p-10 mb-10;
+}
+.commentsContainer h2 {
+  @apply text-xl font-bold mb-10;
+}
+.commentsContainer .reply p,
+.commentsContainer .comment p {
+  @apply text-base mb-5;
+}
+.commentsContainer .reply p button,
+.commentsContainer .comment p button {
+  @apply hidden text-red-600;
+}
+.commentsContainer .reply {
+  @apply ml-10;
+}
+.commentsContainer .reply p .author,
+.commentsContainer .comment p .author {
+  @apply font-bold;
+}
+.commentsContainer .commentsForm {
+  @apply flex flex-col;
+}
+.commentsContainer .commentsForm textarea {
+  @apply bg-gray-300 rounded-md p-5 w-full mb-5 resize-none;
+}
+.commentsContainer .commentsForm button {
+  max-width: 180px;
+}
+/* Appear Delete Button */
+.commentsContainer .reply p:hover button,
+.commentsContainer .comment p:hover button{
+  @apply inline
+}

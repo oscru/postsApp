@@ -1,0 +1,7 @@
+.mainButton {
+  @apply bg-green-800 shadow-md rounded-full text-white px-10 py-2 font-bold border-2;
+  max-height: 50px;
+}
+.mainButton:hover {
+  @apply border-2 border-green-500 bg-green-500;
+}

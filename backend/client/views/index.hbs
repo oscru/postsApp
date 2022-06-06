@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='stylesheet' href='../assets/styles/app.css' />
+    <title>App</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>All Posts</h1>
+        <div id='createANewPost'></div>
+        <div id='login'></div>
+        <div id="toUsersView"></div>
+      </div>
+      <h2>
+      </h2>
+      <ul>
+        {{#if posts}}
+          {{#each posts}}
+            <li>
+              <a
+                href='http://localhost:2000/read/{{this.id}}'
+              >{{this.title}}</a>
+              {{!-- <span>Created at {{}}</span> --}}
+            </li>
+          {{/each}}
+        {{else}}
+          <li>No posts yet</li>
+        {{/if}}
+      </ul>
+    </main>
+    <div id='createNewPostModal' class='hidden'>
+      <h2>Create a New Post!</h2>
+      <form action='' id='createPostForm' method="POST">
+        <input type='text' name='title' id='' placeholder='Title' />
+        <textarea
+          name='content'
+          id=''
+          cols='30'
+          rows='10'
+          placeholder='Content...'
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src='../assets/js/app.js'></script>
+</html>

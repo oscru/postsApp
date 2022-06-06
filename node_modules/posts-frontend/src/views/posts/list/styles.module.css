@@ -1,0 +1,14 @@
+.mainListContainer {
+    @apply m-auto w-1/2 text-left px-10 mt-20;
+  }
+  .mainPostsContainer h1 {
+    @apply text-3xl font-bold mb-5;
+  }
+  .mainPostsContainer ul li {
+    @apply mb-3 ml-5 text-lg;
+  }
+  
+  .postsItem {
+    @apply flex justify-between border-b;
+  }
+  

@@ -1,0 +1,9 @@
+export { default as Login } from "./login";
+export { default as Posts } from "./posts/list";
+export { default as Users } from "./users/list";
+export { default as PostsForm } from "./posts/create";
+export { default as NewUser } from "./users/create";
+export { default as Read } from "./posts/read";
+export { default as EditPost } from "./posts/edit";
+export { default as EditUser } from "./users/edit";
+export { default as Logs } from "./logs";

@@ -1,0 +1,14 @@
+.mainHeader{
+    @apply bg-green-700 px-10 py-5;
+}
+.mainHeader div{
+    @apply flex justify-between items-center;
+}
+
+.mainHeader div ul{
+    @apply flex justify-end items-center w-1/2 px-10;
+}
+
+.mainHeader div ul li{
+    @apply ml-10;
+}
