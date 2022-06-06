@@ -1,4 +1,3 @@
-![alt text](https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg)
 # Posts App
 
 This project is part of a technical test to test my backend skills
@@ -23,8 +22,12 @@ The database name can be changed on the backend sequelize config.
   cd postsApp
   npm run start
 
-  /* Once the project is running then run the seeders */
+  #Once the project is running then run the seeders
   npm run sequelize:seed
+  
+  #⚠️ In case on error, please run the follow commands.
+  cd backend
+  npx sequelize-cli db:seed:all
 ```
 
 ## 🛠 Skills
